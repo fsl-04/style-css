@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Absolute positioning</title>
+
+    <style>
+      body {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      p {
+        background: aqua;
+        border: 3px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      span {
+        background: red;
+        border: 1px solid black;
+      }
+
+      .positioned {
+        position: absolute;
+        background: yellow;
+        top: 30px;
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionamento absoluto</h1>
+
+    <p>Eu sou um elemento de nível de bloco básico. Meus elementos de nível de bloco adjacentes ficam em novas linhas abaixo de mim.</p>
+
+    <p class="positioned">Agora estou absolutamente posicionado, não estou mais jogando pelas regras!</p>
+
+    <p>Estamos separados por nossas margens. Por causa do colapso de margens, estamos separados pela largura de uma de nossas margens, não de ambas.</p>
+
+    <p>elementos inline <span>como este</span> e <span>este</span> ficam na mesma linha um do outro, e nós de texto adjacentes, se houver espaço na mesma linha. Elementos inline transbordantes <span>quebram em uma nova linha se possível — como este contendo texto</span>, ou simplesmente vão para uma nova linha se não, muito parecido com o que esta imagem fará:<img src="img/butterfly.jpg" alt="uma seção larga, mas curta, de uma foto de vários tecidos"></p>
+
+  </body>
+</html>

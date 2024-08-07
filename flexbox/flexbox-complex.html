@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Exemplo de flexbox</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: #C81D6F;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: #F7F7F7;
+      }
+
+      /* Add your flexbox CSS below here */
+
+      section {
+        display: flex;
+      }
+
+      article {
+        flex: 1 200px;
+      }
+
+      article:nth-of-type(3) {
+        flex: 3 200px;
+        display: flex;
+        flex-flow: column;
+      }
+
+      article:nth-of-type(3) div:first-child {
+        flex: 1 100px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      button {
+        flex: 1 auto;
+        margin: 5px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Exemplo de flexbox</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>Primeiro Artigo</h2>
+
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Suco de cevadiss deixa as pessoas mais interessantis.
+        </p>
+      </article>
+
+      <article>
+        <h2>Segundo Artigo</h2>
+
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Delegadis gente finis, bibendum egestas augue arcu ut est. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mé faiz elementum girarzis, nisi eros vermeio.
+        </p>
+      </article>
+
+      <article>
+        <div>
+          <button>Marcelo</button>
+          <button>Eduardo</button>
+          <button>André</button>
+          <button>Arthur</button>
+          <button>Keris</button>
+        </div>
+        <div>
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Delegadis gente finis, bibendum egestas augue arcu ut est. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mé faiz elementum girarzis, nisi eros vermeio.
+          </p>
+        </div>
+        <div>
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis.  Interagi no mé, cursus quis, vehicula ac nisi. In elementis mé pra quem é amistosis quis leo. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies.
+          </p>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
